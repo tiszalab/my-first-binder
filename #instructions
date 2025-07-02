@@ -1,0 +1,18 @@
+#instructions
+install.R      write line that says    install.packages("readr")    do this through github and push to main
+
+Follow resource 1 steps through step 5
+After adding other specified files like runtime escript etc all through github and pushing to main open binder and go to R and put in the following to test the environment
+library(readr)
+packageVersion("readr")
+read_csv(system.file("extdata/mtcars.csv", package = "readr"))
+
+next run this code    it is from source 2 and works better than the way described in source 1   loads additional packages
+remotes::install_github("karthik/holepunch")
+
+Resume to step 6 from source 1  add badge to readme.md and push through github directly to main after this people can click on the icon in your repo and be directly taken to your binder
+
+Resources
+1    https://book.the-turing-way.org/communication/binder/zero-to-binder.html
+2    https://karthik.github.io/holepunch/index.html
+
